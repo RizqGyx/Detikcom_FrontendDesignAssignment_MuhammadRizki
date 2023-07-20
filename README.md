@@ -1,0 +1,2 @@
+# Detikcom_FrontendDesignAssignment_MuhammadRizki
+FrontEnd Designer Detik
