@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap');
+
+* {
+  scroll-padding-top: 76px;
+  font-family: 'Montserrat';
+}
+
+.navbar {
+padding: 0px !important;
+}
+
+.bgimage {
+min-height: 100vh;
+max-width: 100vw;
+background: url(./src/Hero_Section.png);
+background-repeat: no-repeat;
+background-size: 100% 100%;
+}
+
+.container .logo {
+text-decoration: none;
+font-weight: bold;
+font-size: 12px;
+color: white;
+line-height: 10px;
+margin-top: 10px;
+}
+
+.title1 {
+font-size: 25px;
+line-height: 30px;
+}
+
+.title2 {
+letter-spacing: 5px;
+}
+
+.nav-link {
+color: white !important;
+}
+
+.navbar-nav > li {
+margin-right: 50px;
+text-align: center;
+}
+
+.register {
+background-color: white;
+border-radius: 50px;
+}
+
+.register a {
+color: rgb(0, 124, 189) !important;
+margin: 0 25px;
+}
+
+.hero-text {
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+font-weight: bold;
+}
+
+.hero_title {
+font-size: 1.7em;
+font-weight: 600;
+}
+
+.hero_desc {
+font-size: 3.5em;
+font-weight: 800;
+}
+
+.hero_paragraph {
+width: 62%;
+text-align: center;
+font-size: 1em;
+margin-bottom: 30px;
+font-weight: 600;
+}
+
+.button-hero {
+background-color: #3EB7DD;
+padding: 1em;
+border: none;
+border-radius: 5px;
+color: white;
+font-weight: 800;
+font-size: 14px;
+display: block;
+}
+
+.content .about {
+display: flex;
+width: 72%;
+justify-content: center;
+align-items: center;
+gap: 2.5rem;
+}
+
+.action {
+font-size: 20px;
+}
+
+.action .fab{
+font-size: 25px;
+margin-left: 15px;
+}
+
+footer{
+position: absolute;
+}
+
+footer .content .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .content .wrapper .logo {
+text-decoration: none;
+font-weight: bold;
+font-size: 12px;
+color: white;
+width: 90%;
+}
+
+footer .content .wrapper .logo ul {
+  list-style-type: none;
+}
+
+footer .content .wrapper .textcontent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .content .wrapper .textcontent .textfield {
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: 3px solid white;
+width: 90%;
+}
+
+footer .content .wrapper .textcontent .textfield .paragraph {
+  width: 58%;
+}
+
+.sosmed .fab {
+color: white;
+font-size: 2em;
+letter-spacing: 1em;
+}
+
+.mechImage {
+height: 100vh;
+background-image: url(./src/Section_Mekanisme.png);
+background-repeat: no-repeat;
+background-size: 100% 100%;
+}
+
+.mechImage .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.brand {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.brand h2 {
+  font-weight: 600;
+  width: 50%;
+}
+
+.brand .photos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  overflow: hidden;
+}
+
+.brand .photos img {
+  width: 20%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+
+.hero-text .wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width:1024px) {
+body {
+  flex-direction: column;
+}
+
+.content .about {
+  flex-direction: column;
+  width: 80%;
+  gap: 1rem;
+}
+
+.button-hero {
+  width: 40%;
+  font-size: 1.5vw;
+}
+
+.wrapper {
+  width: 65%;
+  margin: auto;
+  justify-content: left;
+}
+
+.hero-text, .hero_paragraph, .hero_title, .hero_desc {
+  text-align: left;
+  width: 65%;
+}
+
+}
+
+@media only screen and (max-width:640px) {
+.navbar .container{
+  margin: 0;
+  width: 100vw;
+  justify-content: space-between !important;
+}
+
+.button-hero {
+  width: 70%;
+  font-size: 2.5vw;
+}
+
+.wrapper {
+  width: 65%;
+}
+
+.bgimage {
+  background-image: url(./src/Mobile_Hero.png);
+  background-size: cover;
+}
+
+.hero_title {
+  font-size: 5vw;
+}
+
+.hero_desc {
+  font-size: 7.5vw;
+}
+
+.hero_paragraph {
+  font-size: 2.7vw;
+}
+
+.content .about .description {
+  width: 350px;
+}
+
+}
