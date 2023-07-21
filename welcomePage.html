@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   </head>
-  <body>
+  <body onload="brandAnimation()">
     <!-- Header Start -->
     <header>
         <!-- Navbar Start -->
@@ -99,16 +99,28 @@
         <!-- Mechanism Section Start -->
         <section id="mechanism" class="mechImage">
             <div class="content">
-                <h1>Mekanisme</h1>
+                <h1 class="text-white">Mekanisme</h1>
                 <div class="box">
-                    <div class="box-item">
-                        <h6>Registrasi</h6>
+                    <div class="box_item bg-white">
+                        <img src="./src/Icon/Card Icon.png" alt="regist">
+                        <div class="head">
+                            <h6 class="text-primary fw-bold title">Registrasi</h6>
+                            <h6 class="text-primary">1 - 30 Januari 2023</h6>
+                        </div>
                     </div>
-                    <div class="box-item">
-                        <h6>Seleksi Peserta</h6>
+                    <div class="box_item bg-white">
+                        <img src="./src/Icon/Card Icon (1).png" alt="Seleksi">
+                        <div class="head">
+                            <h6 class="text-primary fw-bold title">Seleksi Peserta</h6>
+                            <h6 class="text-primary">1 - 7 Februari 2023</h6>
+                        </div>
                     </div>
-                    <div class="box-item">
-                        <h6>Pengumuman Peserta Terpilih</h6>
+                    <div class="box_item bg-white">
+                        <img src="./src/Icon/Card Icon (2).png" alt="Pengumuman">
+                        <div class="head">
+                            <h6 class="text-primary fw-bold title">Pengumuman Peserta Terpilih</h6>
+                            <h6 class="text-primary">8 Februari 2023</h6>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -116,14 +128,14 @@
         <!-- Mechanism Section End -->
 
         <!-- Brand Start -->
-        <section class="brand mt-xxl-5 py-xxl-5">
-            <h2 class="text-primary h4">
+        <section class="brand mt-xxl-5">
+            <h2 class="text-primary h4 fw-bold">
                 Dapatkan Kesempatan Dilirik oleh Venture Capital / Angel Investor
                 Serta Menjadi Narasumber di Detikfinance
             </h2>
             <div class="slider mt-xxl-5">
-                <ul class="photos">
-                    <li class="photo-logo"><img src="./src/brand/Brand1.png" alt="JWC"><li>
+                <ul class="photos" onload="brandAnimation();">
+                    <li class="photo-logo"><img class="jwc" src="./src/brand/Brand1.png" alt="JWC"><li>
                     <li class="photo-logo"><img src="./src/brand/Brand2.png" alt="500"></li>
                     <li class="photo-logo"><img src="./src/brand/Brand3.png" alt="Insignia"></li>
                     <li class="photo-logo"><img src="./src/brand/Brand4.png" alt="Sequoia"></li>
@@ -133,18 +145,8 @@
                     <li class="photo-logo"><img src="./src/brand/Brand8.png" alt="GoldenGate"></li>
                 </ul>
             </div>
-            <button class="button-hero mt-xxl-5">Daftarkan startup kamu</button>
+            <button class="button-photos mt-xxl-5 shadow-lg">Daftarkan startup kamu</button>
         </section>
-
-        <script>
-            const brands = document.querySelector('ul.photos'), 
-                total_brand = brands.children.length;
-
-                for (let i = 0; i < total_brand; i++) {
-                    brands.appendChild(brands.children[i].cloneNode(true));
-                }
-        </script>
-        
         <!-- Brand End -->
 
         <!-- Latest Update Start -->
@@ -164,14 +166,16 @@
     <footer class="container-fluid bg-primary text-white">
         <div class="content">
             <div class="wrapper">
-                <a href="#" class="logo">
-                    <ul>
-                        <li>detikfinance</li>
-                        <li>BUSINESS PLAN</li>
-                        <li>COMPETITION 2023</li>
-                    </ul>
-                </a>
-                <div class="textcontent">
+                <div class="logocontent">
+                    <a href="#" class="logo">
+                        <ul>
+                            <li class="logo-1">detikfinance</li>
+                            <li class="logo-2">BUSINESS PLAN</li>
+                            <li class="logo-3">COMPETITION 2023</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="textcontent mt-xxl-5">
                     <div class="textfield">
                         <p class="paragraph">
                             Detikfinance memberikan ruang kepada para startup di Indonesia untuk menunjukkan, serta
@@ -183,10 +187,14 @@
                             <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
                         </div>
                     </div>
+                    <p class="text-white-50 mt-xxl-5">© 2023 Detikcom. All rights reserved</p>
                 </div>
             </div>
         </div>
     </footer>
     <!-- Footer End -->
   </body>
+
+  <!-- Javascript -->
+  <script src="./script.js"></script>
 </html>

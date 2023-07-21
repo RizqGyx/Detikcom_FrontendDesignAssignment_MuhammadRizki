@@ -87,7 +87,7 @@ margin-bottom: 30px;
 font-weight: 600;
 }
 
-.button-hero {
+.hero-text .wrapper .button-hero {
 background-color: #3EB7DD;
 padding: 1em;
 border: none;
@@ -140,6 +140,7 @@ footer .content .wrapper .textcontent{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 footer .content .wrapper .textcontent .textfield {
@@ -148,6 +149,7 @@ justify-content: space-between;
 align-items: center;
 border-bottom: 3px solid white;
 width: 90%;
+font-weight: 500;
 }
 
 footer .content .wrapper .textcontent .textfield .paragraph {
@@ -161,10 +163,13 @@ letter-spacing: 1em;
 }
 
 .mechImage {
-height: 100vh;
+min-height: 100vh;
 background-image: url(./src/Section_Mekanisme.png);
 background-repeat: no-repeat;
 background-size: 100% 100%;
+width: 100%;
+display: flex;
+justify-content: center;
 }
 
 .mechImage .content {
@@ -173,6 +178,23 @@ background-size: 100% 100%;
   justify-content: center;
   flex-direction: column;
   height: 100vh;
+  width: 75%;
+}
+
+.mechImage .content h1, .title  {
+  font-weight: 700;
+}
+
+.mechImage .content .box .box_item{
+  padding: 1.875rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.box .box_item .head {
+  display: flex;
+  justify-content: space-between;
 }
 
 .brand {
@@ -191,6 +213,10 @@ background-size: 100% 100%;
   display: flex;
   align-items: center;
   overflow: hidden;
+}
+
+.jwc {
+  margin-right: -15rem;
 }
 
 .slider ul.photos {
@@ -214,6 +240,11 @@ ul.photos li.photo-logo {
 ul.photos li.photo-logo img {
   aspect-ratio: 3/2;
   object-fit: contain;
+  transition: transform .5s;
+}
+
+ul.photos li.photo-logo img:hover {
+  transform: scale(1.1);
 }
 
 .slider::after , .slider::before {
@@ -237,6 +268,18 @@ ul.photos li.photo-logo img {
 .brand h2 {
   font-weight: 600;
   width: 50%;
+  margin-top: 4rem;
+}
+
+.button-photos {
+  background-color: #3EB7DD;
+  padding: 1em;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 800;
+  font-size: 14px;
+  display: block;
 }
 
 .hero-text .wrapper {
@@ -244,6 +287,20 @@ ul.photos li.photo-logo img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.wrapper .logocontent {
+  width: 90;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .logo ul {
+  list-style: none;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
 }
 
 @media only screen and (max-width:1024px) {
@@ -257,20 +314,24 @@ body {
   gap: 1rem;
 }
 
-.button-hero {
+.hero-text .wrapper .button-hero {
   width: 40%;
   font-size: 1.5vw;
 }
 
 .wrapper {
-  width: 65%;
+  width: 65% !important;
   margin: auto;
-  justify-content: left;
+  justify-content: left !important;
 }
 
 .hero-text, .hero_paragraph, .hero_title, .hero_desc {
   text-align: left;
   width: 65%;
+}
+
+.brand h2 {
+  font-size: 1.2rem;
 }
 
 }
@@ -282,17 +343,18 @@ body {
   justify-content: space-between !important;
 }
 
-.button-hero {
-  width: 70%;
+.hero-text .wrapper .button-hero {
+  width: 60% !important;
   font-size: 2.5vw;
-}
-
-.wrapper {
-  width: 65%;
 }
 
 .bgimage {
   background-image: url(./src/Mobile_Hero.png);
+  background-size: cover;
+}
+
+.mechImage {
+  background-image: url(./src/Mobile_Mekanisme.png);
   background-size: cover;
 }
 
@@ -310,6 +372,15 @@ body {
 
 .content .about .description {
   width: 350px;
+}
+
+.brand h2 {
+  font-size: 1rem;
+  width: 80%;
+}
+
+.button-photos {
+  font-size: 12px;
 }
 
 }
