@@ -1,9 +1,15 @@
-const box = (image, text) => {
-  const src = `./src/latest/${image}`;
-  const news = text;
+import { Card } from './src/components/cardUpdate.js';
 
+window.addEventListener("DOMContentLoaded", () => {
+    const boxCard = document.getElementById("box-container");
 
-};
+    boxCard.innerHTML += Card('latest1.jpg','Alpha JWC Ventures Suntikkan Dana Segar kepada OnlinePajak dan Stoqo','1 hari yang lalu');
+    boxCard.innerHTML += Card('latest2.jpeg','Startup Lifepack Rampungkan Pendanaan Seri A yang Dipimpin Golden Gate Ventures','1 hari yang lalu');
+    boxCard.innerHTML += Card('latest3.jpeg','Angel Investor Adalah? Berikut Jenis, Contoh dan Cara Mendapatkannya','1 hari yang lalu');
+    boxCard.innerHTML += Card('latest4.png','Crowe Indonesia Gelar Diskusi terkait Valuasi Startup & Laporan ESG','1 hari yang lalu');
+    boxCard.innerHTML += Card('latest5.png','Startup Fresh Factory Bangun Ratusan Gudang Dingin di 103 Kota','1 hari yang lalu');
+    boxCard.innerHTML += Card('latest6.png','Startup Pertanian RI Dapat Pendanaan Awal, Totalnya Rp 90 M','1 hari yang lalu');
+});
 
 function brandAnimation() {
     const brands = document.querySelector("ul.photos"),
@@ -13,3 +19,5 @@ function brandAnimation() {
         brands.appendChild(brands.children[i].cloneNode(true));
     }
 }
+
+brandAnimation();

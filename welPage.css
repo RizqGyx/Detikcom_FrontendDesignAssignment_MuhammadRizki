@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+h1,h2,h3,h4,h5,h6 {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 .navbar {
 padding: 0px !important;
 }
@@ -15,25 +20,30 @@ min-height: 100vh;
 max-width: 100vw;
 background: url(./src/Hero_Section.png);
 background-repeat: no-repeat;
-background-size: 100% 100%;
+background-size: cover;
 }
 
 .container .logo {
 text-decoration: none;
-font-weight: bold;
 font-size: 12px;
 color: white;
 line-height: 10px;
 margin-top: 10px;
 }
 
+.bigCase {
+  font-weight: bold;
+}
+
 .title1 {
 font-size: 25px;
 line-height: 30px;
+font-weight: bold;
 }
 
 .title2 {
 letter-spacing: 5px;
+font-weight: bold;
 }
 
 .nav-link {
@@ -170,6 +180,7 @@ background-size: 100% 100%;
 width: 100%;
 display: flex;
 justify-content: center;
+align-items: center;
 }
 
 .mechImage .content {
@@ -177,24 +188,134 @@ justify-content: center;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
-  width: 75%;
 }
 
-.mechImage .content h1, .title  {
+.mechImage .content h1  {
   font-weight: 700;
+  font-size: 48px;
+  align-self: center;
+  width: 80%;
+}
+
+.title {
+  font-size: 18px;
+  line-height: 19px;
+}
+
+.content .box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 80%;
 }
 
 .mechImage .content .box .box_item{
   padding: 1.875rem;
   display: flex;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 25px;
+  border-radius: 10px;
+}
+
+.update_card_container{ 
+  max-width: 348px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow: hidden;
+}
+
+.update_card_container:hover .update_cardTitle {
+  color: #3EB7DD;
+}
+
+.update_card_container:hover .update_cardImage {
+  transform: scale(1.2);
+}
+
+.update_cardImage {
+  transition: all .4s;
+}
+
+.update_card_content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: all .4s;
+}
+
+.update_cardImage_wrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: all .4s;
+}
+
+.latest_section {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.latest_section .heading {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 20px;
+}
+
+.box-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 34px;
+}
+
+.update_cardImage {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.update_cardTitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17.07px;
+}
+
+.update_cardDate {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.63px;
+}
+
+.box ol {
+  padding-left: 1rem !important;
+}
+
+.box ol li {
+  font-size: 12px;
+}
+
+.itemcontent {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.date {
+  font-size: 14px;
+}
+
+h6 {
+  margin: 0 !important;
 }
 
 .box .box_item .head {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .brand {
@@ -203,6 +324,7 @@ justify-content: center;
   text-align: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 77px;
 }
 
 .slider {
@@ -229,7 +351,7 @@ justify-content: center;
 
 @keyframes slideLeft {
   100%{
-    transform: translateX(-50%);
+    transform: translateX(-53%);
   }
 }
 
@@ -381,6 +503,16 @@ body {
 
 .button-photos {
   font-size: 12px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 24px;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
 }
 
 }

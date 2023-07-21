@@ -20,7 +20,7 @@
             <div class="container">
                 <a href="#" class="logo">
                     <p>
-                        detikfinance<br>
+                        <span class="bigCase">detik</span>finance<br>
                         <span class="title1">BUSINESS PLAN</span><br>
                         <span class="title2">COMPETITION 2023</span>
                     </p>
@@ -103,23 +103,44 @@
                 <div class="box">
                     <div class="box_item bg-white">
                         <img src="./src/Icon/Card Icon.png" alt="regist">
-                        <div class="head">
-                            <h6 class="text-primary fw-bold title">Registrasi</h6>
-                            <h6 class="text-primary">1 - 30 Januari 2023</h6>
+                        <div class="itemcontent">
+                            <div class="head">
+                                <h6 class="text-primary fw-bold title">Registrasi</h6>
+                                <h6 class="text-primary date">1 - 30 Januari 2023</h6>
+                            </div>
+                            <ol>
+                                <li>Calon peserta diminta untuk mengisi formulir pendaftaran online yang berisi informasi pribadi, kontak, dan rincian tim pada link berikut</li>
+                                <li>Selain itu, peserta juga diharapkan mengunggah ringkasan rencana bisnis mereka yang mencakup visi, misi, strategi, dan analisis pasar</li>
+                            </ol>
                         </div>
                     </div>
                     <div class="box_item bg-white">
                         <img src="./src/Icon/Card Icon (1).png" alt="Seleksi">
-                        <div class="head">
-                            <h6 class="text-primary fw-bold title">Seleksi Peserta</h6>
-                            <h6 class="text-primary">1 - 7 Februari 2023</h6>
+                        <div class="itemcontent">
+                            <div class="head">
+                                <h6 class="text-primary fw-bold title">Seleksi Peserta</h6>
+                                <h6 class="text-primary date">1 - 7 Februari 2023</h6>
+                            </div>
+                            <ol>
+                                <li>Tim seleksi akan meninjau setiap pendaftaran dan mengevaluasi kualitas dan kelayakan bisnis plan yang diajukan</li>
+                                <li>Kriteria evaluasi dapat mencakup inovasi, potensi pertumbuhan, kelayakan keuangan, dan kejelasan presentasi</li>
+                                <li>Peserta yang memenuhi persyaratan seleksi akan dipilih sebagai finalis dan berhak melanjutkan ke tahap berikutnya</li>
+                            </ol>
                         </div>
                     </div>
                     <div class="box_item bg-white">
                         <img src="./src/Icon/Card Icon (2).png" alt="Pengumuman">
-                        <div class="head">
-                            <h6 class="text-primary fw-bold title">Pengumuman Peserta Terpilih</h6>
-                            <h6 class="text-primary">8 Februari 2023</h6>
+                        <div class="itemcontent">
+                            <div class="head">
+                                <h6 class="text-primary fw-bold title">Pengumuman Peserta Terpilih</h6>
+                                <h6 class="text-primary date">8 Februari 2023</h6>
+                            </div>
+                            <ol>
+                                <li>Pengumuman finalis akan dilakukan melalui email</li>
+                                <li>Finalis akan diinformasikan tentang jadwal presentasi dan persiapan yang diperlukan</li>
+                                <li>Pada acara pengumuman pemenang, setiap finalis akan mempresentasikan rencana bisnis mereka di hadapan panel juri</li>
+                                <li>Setelah presentasi, panel juri akan melakukan evaluasi dan mengumumkan pemenang kompetisi business plan</li>
+                            </ol>
                         </div>
                     </div>
                 </div>
@@ -134,7 +155,7 @@
                 Serta Menjadi Narasumber di Detikfinance
             </h2>
             <div class="slider mt-xxl-5">
-                <ul class="photos" onload="brandAnimation();">
+                <ul class="photos">
                     <li class="photo-logo"><img class="jwc" src="./src/brand/Brand1.png" alt="JWC"><li>
                     <li class="photo-logo"><img src="./src/brand/Brand2.png" alt="500"></li>
                     <li class="photo-logo"><img src="./src/brand/Brand3.png" alt="Insignia"></li>
@@ -150,13 +171,9 @@
         <!-- Brand End -->
 
         <!-- Latest Update Start -->
-        <section id="latest">
-            <h1 class="heading">LATEST UPDATE</h1>
-            <div class="box-container">
-                <div id="update1">
-
-                </div>
-            </div>
+        <section id="latest" class="latest_section">
+            <h1 class="heading text-primary">LATEST UPDATE</h1>
+            <div class="box-container" id="box-container"></div>
         </section>
         <!-- Latest Updates End -->
     </section>
@@ -196,5 +213,5 @@
   </body>
 
   <!-- Javascript -->
-  <script src="./script.js"></script>
+  <script type="module" src="./script.js"></script>
 </html>
