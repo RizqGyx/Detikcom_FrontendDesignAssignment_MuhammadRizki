@@ -116,23 +116,34 @@
         <!-- Mechanism Section End -->
 
         <!-- Brand Start -->
-        <section class="brand">
+        <section class="brand mt-xxl-5 py-xxl-5">
             <h2 class="text-primary h4">
                 Dapatkan Kesempatan Dilirik oleh Venture Capital / Angel Investor
                 Serta Menjadi Narasumber di Detikfinance
             </h2>
-            <div class="photos">
-                <img src="./src/brand/Brand1.png" alt="JWC">
-                <img src="./src/brand/Brand2.png" alt="500">
-                <img src="./src/brand/Brand3.png" alt="Insignia">
-                <img src="./src/brand/Brand4.png" alt="Sequoia">
-                <img src="./src/brand/Brand5.png" alt="SG">
-                <img src="./src/brand/Brand6.png" alt="WaveMaker">
-                <img src="./src/brand/Brand7.png" alt="GFC">
-                <img src="./src/brand/Brand8.png" alt="GoldenGate">
+            <div class="slider mt-xxl-5">
+                <ul class="photos">
+                    <li class="photo-logo"><img src="./src/brand/Brand1.png" alt="JWC"><li>
+                    <li class="photo-logo"><img src="./src/brand/Brand2.png" alt="500"></li>
+                    <li class="photo-logo"><img src="./src/brand/Brand3.png" alt="Insignia"></li>
+                    <li class="photo-logo"><img src="./src/brand/Brand4.png" alt="Sequoia"></li>
+                    <li class="photo-logo"><img src="./src/brand/Brand5.png" alt="SG"></li>
+                    <li class="photo-logo"><img src="./src/brand/Brand6.png" alt="WaveMaker"></li>
+                    <li class="photo-logo"><img src="./src/brand/Brand7.png" alt="GFC"></li>
+                    <li class="photo-logo"><img src="./src/brand/Brand8.png" alt="GoldenGate"></li>
+                </ul>
             </div>
-            <button class="button-hero">Daftarkan startup kamu</button>
+            <button class="button-hero mt-xxl-5">Daftarkan startup kamu</button>
         </section>
+
+        <script>
+            const brands = document.querySelector('ul.photos'), 
+                total_brand = brands.children.length;
+
+                for (let i = 0; i < total_brand; i++) {
+                    brands.appendChild(brands.children[i].cloneNode(true));
+                }
+        </script>
         
         <!-- Brand End -->
 
