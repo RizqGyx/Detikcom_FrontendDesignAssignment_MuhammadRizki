@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detikfinance Business Plan Competition 2023</title>
     <link rel="stylesheet" href="welPage.css" />
-    <link rel="icon" type="image/x-icon" href="./src/detikLogo.png" />
+    <link rel="icon" type="image/x-icon" href="./src/background/detikLogo.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
@@ -16,43 +16,14 @@
     <!-- Header Start -->
     <header>
         <!-- Navbar Start -->
-        <nav class="navbar navbar-expand-lg fixed-top bg-primary navbar-dark">
-            <div class="container">
-                <a href="#" class="logo">
-                    <p>
-                        <span class="bigCase">detik</span>finance<br>
-                        <span class="title1">BUSINESS PLAN</span><br>
-                        <span class="title2">COMPETITION 2023</span>
-                    </p>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#mechanism">Mechanism</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#latest">Latest Update</a>
-                        </li>
-                        <li class="nav-item register">
-                            <a class="nav-link" href="register.html">Register</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <nav class="navbar navbar-expand-xl fixed-top bg-primary navbar-dark" id="navbar"></nav>
         <!-- Navbar End -->
 
         <!-- Hero Section Start -->
         <section class="bgimage" id="home">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                <div class="hero_text">
+                    <div class="wrapper_text">
                         <h3 class="hero_title">Detikfinance Business Plan Competition 2023</h3>
                         <h1 class="hero_desc">EMPOWERING INDONESIA STARTUP</h1>
                         <p class="hero_paragraph">
@@ -60,9 +31,9 @@
                             untuk menunjukkan, serta mempromosikan brand mereka untuk
                             mendapatkan perhatian dari venture capital atau angel investor
                         </p>
-                        <div class="wrapper">
-                            <button class="button-hero">Daftarkan startup kamu</button>
-                        </div>
+                    </div>
+                    <div class="wrapper_button">
+                        <button class="button-hero">Daftarkan startup kamu</button>
                     </div>
                 </div>
             </div>
@@ -74,13 +45,13 @@
     <!-- Content Start -->
     <section class="content">
         <!-- About Section Start -->
-        <section id="about" class="container mt-5 pt-5 mb-5 pb-3 about">
+        <section id="about" class="about">
             <div class="video">
-                <iframe width="350" height="225" src="https://www.youtube.com/embed/l3PlFCvAoqw"></iframe>
+                <iframe width="392" height="220.157" class="youtube" src="https://www.youtube.com/embed/l3PlFCvAoqw"></iframe>
             </div>
             <div class="description">
-                <h2 class="text-primary h4 fw-bold">About Detikfinance Business Plan Competition 2023</h2>
-                <p class="mt-3 mb-2 text-black">
+                <h2 class="text-primary">About Detikfinance Business Plan Competition 2023</h2>
+                <p class="text-black">
                     Detikfinance kali ini akan memberikan ruang bagi startup untuk networking dan
                     memamerkan produk inovasinya di hadapan venture capital dan angel investor.
                     Acara ini juga akan menghadirkan para pengembang teknologi dan pelaku bisnis
@@ -109,7 +80,7 @@
                                 <h6 class="text-primary date">1 - 30 Januari 2023</h6>
                             </div>
                             <ol>
-                                <li>Calon peserta diminta untuk mengisi formulir pendaftaran online yang berisi informasi pribadi, kontak, dan rincian tim pada link berikut</li>
+                                <li>Calon peserta diminta untuk mengisi formulir pendaftaran online yang berisi informasi pribadi, kontak, dan rincian tim pada <span class="text-info"> link berikut</span></li>
                                 <li>Selain itu, peserta juga diharapkan mengunggah ringkasan rencana bisnis mereka yang mencakup visi, misi, strategi, dan analisis pasar</li>
                             </ol>
                         </div>
@@ -149,12 +120,12 @@
         <!-- Mechanism Section End -->
 
         <!-- Brand Start -->
-        <section class="brand mt-xxl-5">
+        <section class="brand">
             <h2 class="text-primary h4 fw-bold">
                 Dapatkan Kesempatan Dilirik oleh Venture Capital / Angel Investor
                 Serta Menjadi Narasumber di Detikfinance
             </h2>
-            <div class="slider mt-xxl-5">
+            <div class="slider">
                 <ul class="photos">
                     <li class="photo-logo"><img class="jwc" src="./src/brand/Brand1.png" alt="JWC"><li>
                     <li class="photo-logo"><img src="./src/brand/Brand2.png" alt="500"></li>
@@ -166,7 +137,7 @@
                     <li class="photo-logo"><img src="./src/brand/Brand8.png" alt="GoldenGate"></li>
                 </ul>
             </div>
-            <button class="button-photos mt-xxl-5 shadow-lg">Daftarkan startup kamu</button>
+            <button class="button-photos shadow-lg">Daftarkan startup kamu</button>
         </section>
         <!-- Brand End -->
 
@@ -180,35 +151,7 @@
     <!-- Content End -->
 
     <!-- Footer Start -->
-    <footer class="container-fluid bg-primary text-white">
-        <div class="content">
-            <div class="wrapper">
-                <div class="logocontent">
-                    <a href="#" class="logo">
-                        <ul>
-                            <li class="logo-1">detikfinance</li>
-                            <li class="logo-2">BUSINESS PLAN</li>
-                            <li class="logo-3">COMPETITION 2023</li>
-                        </ul>
-                    </a>
-                </div>
-                <div class="textcontent mt-xxl-5">
-                    <div class="textfield">
-                        <p class="paragraph">
-                            Detikfinance memberikan ruang kepada para startup di Indonesia untuk menunjukkan, serta
-                            mempromosikan brand mereka untuk mendapatkan perhatian dari venture capital atau angel investor
-                        </p>
-                        <div class="sosmed">
-                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-                        </div>
-                    </div>
-                    <p class="text-white-50 mt-xxl-5">© 2023 Detikcom. All rights reserved</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <footer class="bg-primary text-white" id="foBot"></footer>
     <!-- Footer End -->
   </body>
 
