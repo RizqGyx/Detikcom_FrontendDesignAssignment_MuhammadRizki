@@ -453,27 +453,6 @@ ul.photos li.photo-logo img:hover {
   border-radius: 5px;
 }
 
-.hero-text .wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.wrapper .logocontent {
-  width: 90;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.wrapper .logo ul {
-  list-style: none;
-  display: flex;
-  align-items: start;
-  flex-direction: column;
-}
-
 @media only screen and (max-width:1024px) {
 body {
   flex-direction: column;
