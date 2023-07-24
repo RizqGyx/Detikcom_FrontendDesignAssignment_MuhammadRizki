@@ -28,21 +28,31 @@
                     </div>
                     <div class="wrapper_form">
                         <form action="#" class="form_content">
-                            <input type="text" id="perusahaan" name="perusahaan" placeholder="Nama Perusahaan" required>
-                            <input type="email" id="email" name="email" placeholder="Email" required>
+                            <div>
+                                <input type="text" id="perusahaan" name="perusahaan" placeholder="Nama Perusahaan" required>
+                                <span class="asterisk_input">  </span>
+                            </div>
+                            <div>
+                                <input type="email" id="email" name="email" placeholder="Email" required>
+                                <span class="asterisk_input">  </span>
+                            </div>
                             <div class="phone_control">
-                                <input type="phone" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Nomor Telepon" required>
+                                <div>
+                                    <input type="phone" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Nomor Telepon" required>
+                                    <span class="asterisk_input">  </span>
+                                </div>
                                 <p>isi hanya angka</p>
                             </div>
-                            <textarea name="about" id="about" cols="50" rows="5" placeholder="Tentang Perusahaan (Max. 200 character)" required></textarea>
-                            <div class="link_control">
-                                <input type="url" id="homepage" name="homepage" placeholder="Link Website" pattern="https?://.*" required>
-                                <p>Website, Sosial Media, dll. Sertakan protokol URL (https:// atau http://).</p>
+                            <div>
+                                <textarea name="about" id="about" cols="50" rows="5" placeholder="Tentang Perusahaan (Max. 200 character)" required></textarea>
+                                <span class="asterisk_input">  </span>
                             </div>
                             <div class="logo_photo">
                                 <div class="img_wrapper">
-                                    <img src="./src/Icon/Vector.png" alt="upload_logo">
-                                    <p>Upload file logo<span class="logo_req">*</span></p>
+                                    <label for="images" class="drop-container" id="dropcontainer">
+                                        <span class="drop-title"><img src="./src/Icon/Vector.png" alt="upload_logo"></span>
+                                        <input type="file" id="images" accept="image/*" class="custom-file-input" required>
+                                    </label>
                                 </div>
                                 <div class="format">
                                     <ol>
@@ -56,12 +66,20 @@
                             <div class="profil_control">
                                 <div class="profil_file_control">
                                     <p>Profil Perusahaan atau Deck (opsional)</p>
-                                    <input type="file" accept=".pdf">
+                                    <label for="inputField" class="btn btn-info">Upload File</label>
+                                    <input type="file" id="inputField" style="display:none">
                                 </div>
                                 <p>Format file .pdf , maksimal size 20mb</p>
                             </div>
+                            <div class="link_control">
+                                <div>
+                                    <input type="url" id="homepage" name="homepage" placeholder="Link Website" pattern="https?://.*" required>
+                                    <span class="asterisk_input">  </span>
+                                </div>
+                                <p>Website, Sosial Media, dll. Sertakan protokol URL (https:// atau http://).</p>
+                            </div>
                             <div class="check_box">
-                                <input type="checkbox" name="accept" id="accept" value="accept">
+                                <input type="checkbox" name="accept" id="accept" value="accept" required>
                                 <label for="accept">Dengan menekan tombol "Daftar", Saya menyetujui syarat dan ketentuan yang berlaku</label>
                             </div>
                             <center><input type="submit" value="Register" class="submit"></center>
